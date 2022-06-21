@@ -23,5 +23,7 @@
         <property name="show_sql">true</property>
 
         <mapping class="hibernate.Student"/>
+        <mapping class="author.entity.Author"/>
+        <mapping class="author.entity.Book"/>
     </session-factory>
 </hibernate-configuration>
