@@ -25,12 +25,11 @@ public class Author {
     private String name;
     private String email;
 
-    public Author(String name) {
-        this.name = name;
-    }
+    private String lastName;
 
-    public Author(String name, String email) {
+    public Author(String name, String email, String lastName) {
         this.name = name;
         this.email = email;
+        this.lastName = lastName;
     }
 }

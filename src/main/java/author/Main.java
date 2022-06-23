@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        BookHelper bk = new BookHelper();
+//        BookHelper bk = new BookHelper();
 
 //        Book book = new Book("Java Proffessional", "SOLID");
 //        bk.addBook(book);
@@ -20,20 +20,27 @@ public class Main {
 //            System.out.println(book);
 //        }
 
-        System.out.println();
-
-        System.out.println(bk.getBookById(1l));
+//        System.out.println();
+//
+//        System.out.println(bk.getBookById(1l));
 
 //        System.out.println(bookList);
 
 
+        AuthorHelper ah = new AuthorHelper();
 
-        //        AuthorHelper ah = new AuthorHelper();
+//        Author authorByID = ah.getAuthorByID(2);
+//        authorByID.setName("Oleksandr12");
+//        authorByID.setLastName("Pushkin12");
+        List<Author> pyshkin = ah.getListAuthorByName("from Author a where a.name = :myName", "Oleksandr");
+        System.out.println(pyshkin);
 
-//        Author author = new Author("Mike" );
-//        Author a = new Author("Dolla6", "dolla6@gmail.com");
+
+//        Author author = new Author("Mike");
+//        Author a = new Author("Dolla6", "dolla6@gmail.com", "Joy");
+//        ah.addAuthor(author);
 //        ah.addAuthor(a);
-
+//
 //        List<Author> authorList = ah.getListAuthorByName("Pyshkin");
 //        List<Author> authorList = ah.getAuthorList();
 //        for (Author author : authorList) {
