@@ -28,12 +28,13 @@ public class Main {
 
 
         AuthorHelper ah = new AuthorHelper();
+        ah.update(new Author(8L, "Oleksandr7", "PP"));
 
 //        Author authorByID = ah.getAuthorByID(2);
 //        authorByID.setName("Oleksandr12");
 //        authorByID.setLastName("Pushkin12");
-        List<Author> pyshkin = ah.getListAuthorByName("from Author a where a.name = :myName", "Oleksandr");
-        System.out.println(pyshkin);
+//        List<Author> pyshkin = ah.getListAuthorByName("from Author a where a.name = :myName", "Oleksandr");
+//        System.out.println(pyshkin);
 
 
 //        Author author = new Author("Mike");
