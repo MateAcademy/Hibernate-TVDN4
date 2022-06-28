@@ -1,15 +1,6 @@
 package manyTOmany;
 
-import manyTOmany.entity.HomeAddress;
-import manyTOmany.entity.Person;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Logger;
 
 /**
@@ -17,7 +8,6 @@ import java.util.logging.Logger;
  */
 public class Main {
 
-   // private static final Logger logger = Logger.getGlobal();
     private static final Logger logger2 = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {

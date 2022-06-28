@@ -26,12 +26,4 @@ public class HomeAddress {
     @JoinTable(name = "address_persons")
     private List<Person> person;
 
-    public HomeAddress(String street) {
-        this.street = street;
-    }
-
-//    public HomeAddress(String street, List<Person> person) {
-//        this.street = street;
-//        this.person = person;
-//    }
 }

@@ -21,12 +21,16 @@
         </plugins>
     </build>
 
-    <dependencies>
+    <properties>
+<!--        <log4j.version>1.2.16</log4j.version>-->
+        <log4j.version>1.2.16</log4j.version>
+    </properties>
 
+    <dependencies>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.16</version>
+            <version>${log4j.version}</version>
         </dependency>
 
         <!--Log4j 2-->

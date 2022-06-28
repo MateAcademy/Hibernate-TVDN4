@@ -1,0 +1,82 @@
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="false" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+    <!--Console appender -->
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %p %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="fileAppender1" class="org.apache.log4j.RollingFileAppender">
+        <param name="maxFileSize" value="5MB"/>
+        <param name="maxBackupIndex" value="3"/>
+        <param name="file" value="/home/user/dev/Hibernate-many-to-many/src/main/resources/log/logfile_test.log.1"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="fileAppender2" class="org.apache.log4j.RollingFileAppender">
+        <param name="maxFileSize" value="5MB"/>
+        <param name="maxBackupIndex" value="3"/>
+        <param name="file" value="/home/user/dev/Hibernate-many-to-many/src/main/resources/log/logfile_test.log.2"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+
+<!--        <root>-->
+<!--            <level value="DEBUG"/>-->
+<!--            <appender-ref ref="fileAppender2"/>-->
+<!--        </root>-->
+
+    <category name="businessLogic.Application">
+        <!--all, trace, debug, info, warn, error, fatal-->
+        <priority value="debug"/>
+        <appender-ref ref="fileAppender1"/>
+    </category>
+
+    <category name="businessLogic.FileReader">
+        <!--all, trace, debug, info, warn, error, fatal-->
+        <priority value="debug"/>
+        <appender-ref ref="fileAppender2"/>
+    </category>
+</log4j:configuration>
+
+
+        <!--<?xml version="1.0" encoding="UTF-8" ?>-->
+        <!--<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">-->
+        <!--<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>-->
+
+        <!--    <appender name="fileAppender1" class="org.apache.log4j.RollingFileAppender">-->
+        <!--        <param name="maxFileSize" value="5MB"/>-->
+        <!--        <param name="maxBackupIndex" value="3"/>-->
+        <!--        <param name="file" value="/home/user/dev/Hibernate-many-to-many/src/main/resources/log/logfile_test.log.1"/>-->
+        <!--        <layout class="org.apache.log4j.PatternLayout">-->
+        <!--            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>-->
+        <!--        </layout>-->
+        <!--    </appender>-->
+
+        <!--    <appender name="fileAppender2" class="org.apache.log4j.RollingFileAppender">-->
+        <!--        <param name="maxFileSize" value="5MB"/>-->
+        <!--        <param name="maxBackupIndex" value="3"/>-->
+        <!--        <param name="file" value="/home/user/dev/Hibernate-many-to-many/src/main/resources/log/logfile_test.log.2"/>-->
+        <!--        <layout class="org.apache.log4j.PatternLayout">-->
+        <!--            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>-->
+        <!--        </layout>-->
+        <!--    </appender>-->
+
+        <!--    <category name="/home/user/dev/Hibernate-many-to-many/src/main/java/businessLogic/">-->
+        <!--        &lt;!&ndash;all, trace, debug, info, warn, error, fatal&ndash;&gt;-->
+        <!--        <priority value="all"/>-->
+        <!--        <appender-ref ref="fileAppender1"/>-->
+        <!--    </category>-->
+
+        <!--    &lt;!&ndash;    <category name="/home/user/dev/Hibernate-many-to-many/src/main/java/businessLogic/FileReader.java" additivity="false">&ndash;&gt;-->
+        <!--    <category name="/home/user/dev/Hibernate-many-to-many/src/main/java/businessLogic/FileReader.java"-->
+        <!--              additivity="false">-->
+        <!--        <priority value="all"/>-->
+        <!--        <appender-ref ref="fileAppender2"/>-->
+        <!--    </category>-->
+
+        <!--</log4j:configuration>-->
