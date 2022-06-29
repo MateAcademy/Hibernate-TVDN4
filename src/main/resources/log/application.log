@@ -60,3 +60,33 @@
 2022-06-28 17:26:38 INFO  FileReader:24 - Bete array from file have been gotten
 2022-06-28 17:26:38 INFO  FileReader:27 - Message from file have been gotten
 2022-06-28 17:26:38 DEBUG Application:23 - finish main() in Application.class
+2022-06-28 17:54:04 DEBUG Application:18 - start main() in Application.class
+2022-06-28 17:54:04 INFO  FileReader:21 - File URL have been gotten
+2022-06-28 17:54:04 INFO  FileReader:24 - Bete array from file have been gotten
+2022-06-28 17:54:04 INFO  FileReader:27 - Message from file have been gotten
+2022-06-28 17:54:04 DEBUG Application:23 - finish main() in Application.class
+2022-06-28 17:54:24 DEBUG Application:18 - start main() in Application.class
+2022-06-28 17:54:24 INFO  FileReader:21 - File URL have been gotten
+2022-06-28 17:54:24 INFO  FileReader:24 - Bete array from file have been gotten
+2022-06-28 17:54:24 INFO  FileReader:27 - Message from file have been gotten
+2022-06-28 17:54:24 DEBUG Application:23 - finish main() in Application.class
+2022-06-28 17:54:30 DEBUG Application:18 - start main() in Application.class
+2022-06-28 17:54:30 INFO  FileReader:21 - File URL have been gotten
+2022-06-28 17:54:30 INFO  FileReader:24 - Bete array from file have been gotten
+2022-06-28 17:54:30 INFO  FileReader:27 - Message from file have been gotten
+2022-06-28 17:54:30 DEBUG Application:23 - finish main() in Application.class
+2022-06-28 17:54:41 DEBUG Application:18 - start main() in Application.class
+2022-06-28 17:54:41 INFO  FileReader:21 - File URL have been gotten
+2022-06-28 17:54:41 INFO  FileReader:24 - Bete array from file have been gotten
+2022-06-28 17:54:41 INFO  FileReader:27 - Message from file have been gotten
+2022-06-28 17:54:41 DEBUG Application:23 - finish main() in Application.class
+2022-06-28 17:55:24 DEBUG Application:18 - start main() in Application.class
+2022-06-28 17:55:24 INFO  FileReader:21 - File URL have been gotten
+2022-06-28 17:55:24 INFO  FileReader:24 - Bete array from file have been gotten
+2022-06-28 17:55:24 INFO  FileReader:27 - Message from file have been gotten
+2022-06-28 17:55:24 DEBUG Application:23 - finish main() in Application.class
+2022-06-28 17:55:41 DEBUG Application:18 - start main() in Application.class
+2022-06-28 17:55:41 INFO  FileReader:21 - File URL have been gotten
+2022-06-28 17:55:41 INFO  FileReader:24 - Bete array from file have been gotten
+2022-06-28 17:55:41 INFO  FileReader:27 - Message from file have been gotten
+2022-06-28 17:55:41 DEBUG Application:23 - finish main() in Application.class

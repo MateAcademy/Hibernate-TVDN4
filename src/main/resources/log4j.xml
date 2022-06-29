@@ -26,7 +26,7 @@
     </appender>
 
 <!--        <root>-->
-<!--            <level value="DEBUG"/>-->
+<!--            <level value="INFO"/>-->
 <!--            <appender-ref ref="fileAppender2"/>-->
 <!--        </root>-->
 
@@ -36,7 +36,7 @@
         <appender-ref ref="fileAppender1"/>
     </category>
 
-    <category name="businessLogic.FileReader">
+    <category name="businessLogic.FileReader" additivity="false">
         <!--all, trace, debug, info, warn, error, fatal-->
         <priority value="debug"/>
         <appender-ref ref="fileAppender2"/>
