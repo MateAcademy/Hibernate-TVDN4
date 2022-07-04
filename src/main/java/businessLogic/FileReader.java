@@ -18,10 +18,10 @@ public class FileReader implements Reader {
         String message = "";
         try {
             URI url = ClassLoader.getSystemResource("message.txt").toURI();
-            logger.info("File URL have been gotten");
+            logger.debug("File URL have been gotten");
 
             byte[] fileBytes = Files.readAllBytes(Paths.get(url));
-            logger.info("Bete array from file have been gotten");
+            logger.debug("Bete array from file have been gotten");
 
             message = new String(fileBytes);
             logger.info("Message from file have been gotten");

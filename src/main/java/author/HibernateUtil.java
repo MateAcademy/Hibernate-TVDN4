@@ -8,7 +8,6 @@ import org.hibernate.cfg.Configuration;
  * @author Sergey Klunniy
  */
 public class HibernateUtil {
-
     private static SessionFactory factory;
 
     static {

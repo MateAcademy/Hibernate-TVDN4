@@ -8,18 +8,18 @@
     </appender>
 
     <appender name="fileAppender1" class="org.apache.log4j.RollingFileAppender">
-        <param name="maxFileSize" value="5MB"/>
+        <param name="maxFileSize" value="1KB"/>
         <param name="maxBackupIndex" value="3"/>
-        <param name="file" value="/home/user/dev/Hibernate-many-to-many/src/main/resources/log/logfile_test.log.1"/>
+        <param name="file" value="D:\\projectsJAVA\\Hibernate-many-to-many\\src\\main\\resources\\log\\logfile_test.log.1"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
         </layout>
     </appender>
 
     <appender name="fileAppender2" class="org.apache.log4j.RollingFileAppender">
-        <param name="maxFileSize" value="5MB"/>
+        <param name="maxFileSize" value="1KB"/>
         <param name="maxBackupIndex" value="3"/>
-        <param name="file" value="/home/user/dev/Hibernate-many-to-many/src/main/resources/log/logfile_test.log.2"/>
+        <param name="file" value="D:\\projectsJAVA\\Hibernate-many-to-many\\src\\main\\resources\\log\\logfile_test.log.2"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
         </layout>
@@ -36,7 +36,7 @@
         <appender-ref ref="fileAppender1"/>
     </category>
 
-    <category name="businessLogic.FileReader">
+    <category name="businessLogic.FileReader" additivity="false">
         <!--all, trace, debug, info, warn, error, fatal-->
         <priority value="debug"/>
         <appender-ref ref="fileAppender2"/>

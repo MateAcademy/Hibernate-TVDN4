@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * @author Sergey Klunniy
@@ -22,6 +19,7 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+//    @Column(name = "first_name")
     private String name;
     private String email;
 
@@ -29,8 +27,27 @@ public class Author {
         this.name = name;
     }
 
+    public Author(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Author(String name, String email) {
         this.name = name;
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+//        if (email == null)
+//            return "Author{" +
+//                    "id=" + id +
+//                    ", name='" + name;
+
+        return "Author{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
